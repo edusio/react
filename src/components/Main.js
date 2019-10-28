@@ -18,14 +18,12 @@ export default class Main extends React.Component {
         });
     }
     render() {
-        console.log(this.state.breweriesList);
-      return <div>HOLA {this.state.msg}
+      return<div>
         {this.state.breweriesList && this.renderListcomponent(this.state.breweriesList)}
       </div>;
     }
 
     renderListcomponent(breweriesList) {
-        console.log("****************" + breweriesList+ '******');
         return <ListComponent items={breweriesList}></ListComponent>
     }
   }
