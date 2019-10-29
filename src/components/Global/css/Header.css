@@ -1,0 +1,16 @@
+.Header {    
+    width: 100%;
+    background: #0f0;   
+    padding-bottom: 10px;
+}
+
+.Header .menu {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.Header .menu li {
+    padding-right: 18px;
+    display: inline-block;
+}

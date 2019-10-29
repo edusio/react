@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    height: auto;
+    width: 600px;
+    border:1px solid red;
+}
+.container-item {
+    width: 33%;
+}
