@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import './BrewerieItem.css';
-import { browserHistory } from 'react-router'
 
 export default class BrewerieItem extends Component {
     
@@ -17,7 +16,6 @@ export default class BrewerieItem extends Component {
         ev.preventDefault();
         ev.stopPropagation();
         console.log(id);
-        browserHistory.push('/about');
         //this.props.history.push('/about');
    }
 
