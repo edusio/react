@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-
 import './BrewerieItem.css';
+import {
+    withRouter
+  } from 'react-router-dom';
 
-export default class BrewerieItem extends Component {
+class BrewerieItem extends Component {
     
     constructor(props){
         super(props);
@@ -15,8 +17,12 @@ export default class BrewerieItem extends Component {
    retrieveBrewerie(ev,id) {
         ev.preventDefault();
         ev.stopPropagation();
-        console.log(id);
-        //this.props.history.push('/about');
+        this.props.history.push({
+            pathname:'/about',
+            state: {
+                id
+            }
+        });
    }
 
     render() {
@@ -37,3 +43,4 @@ export default class BrewerieItem extends Component {
         );
     }
 };
+export default withRouter(BrewerieItem);

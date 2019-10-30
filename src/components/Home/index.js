@@ -12,7 +12,7 @@ class Home extends Component {
     }
 
     componentWillMount() {
-        axios.get('https://api.openbrewerydb.org/breweries').then(respuesta => this.setState({breweriesList: respuesta.data}));
+        axios.get('https://api.openbrewerydb.org/breweries').then(response => this.setState({breweriesList: response.data}));
     }
     renderBreweriesList(breweriesList) {
         return <BreweriesList items={breweriesList}></BreweriesList>;
