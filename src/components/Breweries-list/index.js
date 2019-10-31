@@ -5,9 +5,6 @@ import BrewerieItem from './../Breweries-item/index';
 export default class BreweriesList extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            items: props.items
-        };
     }
 
     renderItems(items) {
@@ -17,7 +14,7 @@ export default class BreweriesList extends Component {
     }
 
     render() {
-        const {items} = this.state;
+        const {items} = this.props;
         return (<div className="" >
                 <h1>List of Breweries</h1>
                 {this.renderItems(items)}
