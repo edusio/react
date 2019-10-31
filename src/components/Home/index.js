@@ -8,7 +8,8 @@ class Home extends Component {
     constructor(props){
         super(props);
         this.state= {
-            breweriesList: []
+            breweriesList: [],
+            loading: true
         }
     }
 
@@ -29,18 +30,32 @@ class Home extends Component {
     }
 
     retrieveList(params = null) {
+        this.setState({
+            loading: true
+        });
         const queryParam = this.configureParams(params);
         axios.get('https://api.openbrewerydb.org/breweries'+ queryParam)
-        .then(response => this.setState({breweriesList: response.data}));
+        .then(response => this.setState({
+            breweriesList: response.data,
+            loading: false
+        }));
+    }
+
+    renderLoading() {
+        return (
+            <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+            </div>
+        );
     }
 
     render() {
-        const {breweriesList} = this.state;
-        console.log(breweriesList.length > 0);
-        return (<div className="Home">
+        const {breweriesList, loading} = this.state;
+        return (<div className="Home col-12 col-lg-6 offset-lg-3 bg-white">
                 <h1>Home Page</h1>
                 <FormSearch renderBreweriesList={(data) => this.retrieveList(data)}></FormSearch>
-                {breweriesList.length > 0 ? this.renderBreweriesList(breweriesList) : <p>LOADINGG....</p>}
+                <br></br>
+                {loading ? this.renderLoading() : this.renderBreweriesList(breweriesList)}
         </div>);
     }
 }

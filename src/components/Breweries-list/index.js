@@ -15,7 +15,7 @@ export default class BreweriesList extends Component {
 
     render() {
         const {items} = this.props;
-        return (<div className="" >
+        return (<div className="col-12" >
                 <h1>List of Breweries</h1>
                 {this.renderItems(items)}
             </div>

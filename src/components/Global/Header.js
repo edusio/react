@@ -15,9 +15,11 @@ class Header extends React.Component {
 
 
     return (
-      <div className="Header">
-            <h2>{title}</h2>
-        </div>        
+        <nav class="navbar navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+                React APP
+            </a>
+      </nav>    
     );
   }
 }

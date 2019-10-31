@@ -22,17 +22,21 @@ class FormSearch extends Component {
 
     render() {
       return (
-        <form onSubmit={ (ev) => this.onSubmit(ev)} name="myform">
-            <div>
-                City:
-                <input type="text" name="city"/>
+      <div className="col-12">
+            <form onSubmit={ (ev) => this.onSubmit(ev)} name="myform">
+            <div className="form-group">
+                <div className="col-sm-12 col-lg-6">
+                    <label for="exampleInputEmail1">State</label>
+                    <input type="text" className="form-control" name="state" />
+                </div>
+                <div className="col-sm-12 col-lg-6">
+                    <label for="exampleInputPassword1">City</label>
+                    <input type="text" className="form-control" name="city"/>
+                </div>  
             </div>
-            <div>
-                State:
-                <input type="text" name="state"/>
-            </div>
-            <input type="submit" value="Submit" />
-      </form>
+            <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
+      </div>
       );
     }
 

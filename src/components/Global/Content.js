@@ -12,8 +12,8 @@ class Content extends React.Component {
         const { body } = this.props;
 
         return (
-            <div className="Content">
-                bodyyyyyyyyyyyyyyyyyy
+            <div className="content">
+                <br></br>
                 {body}
             </div>
         );
