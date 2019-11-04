@@ -27,11 +27,11 @@ class FormSearch extends Component {
             <div className="form-group">
                 <div className="col-sm-12 col-lg-6">
                     <label for="exampleInputEmail1">State</label>
-                    <input type="text" className="form-control" name="state" />
-                </div>
+                    <input type="text" className="form-control" name="state" placeholder="ej: Alaska"/>
+                </div><br/>
                 <div className="col-sm-12 col-lg-6">
                     <label for="exampleInputPassword1">City</label>
-                    <input type="text" className="form-control" name="city"/>
+                    <input type="text" className="form-control" name="city" placeholder="ej: Birmingham"/>
                 </div>  
             </div>
             <button type="submit" className="btn btn-primary">Submit</button>

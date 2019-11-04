@@ -18,7 +18,7 @@ class BrewerieItem extends Component {
         ev.preventDefault();
         ev.stopPropagation();
         this.props.history.push({
-            pathname:'/about',
+            pathname:'/detail',
             state: {
                 id
             }
@@ -30,11 +30,11 @@ class BrewerieItem extends Component {
         return (
             <div>
                 <div id= {id} className="container col-12" onClick={(ev) => this.retrieveBrewerie(ev,id)}>
-                    <div class="container-item col-12  col-md-6">
+                    <div class="container-item col-6 col-md-6">
                         <p>{name}</p>
                         <p>{phone}</p>
                     </div>
-                    <div className="container-item col-12 col-md-6">
+                    <div className="container-item col-6 col-md-6">
                         {city} ({country})
                     </div>
                     
