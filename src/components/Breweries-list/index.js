@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import BrewerieItem from './../Breweries-item/index';
 
 export default class BreweriesList extends Component {
-    constructor(props){
-        super(props);
-    }
 
     renderItems(items) {
         return items.map((item) => {

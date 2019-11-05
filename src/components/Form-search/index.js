@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import { throws } from 'assert';
-
 
 class FormSearch extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     onSubmit(ev) {
         ev.preventDefault();
