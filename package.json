@@ -1,5 +1,5 @@
 {
-  "name": "beezy-eduardo",
+  "name": "",
   "version": "0.0.1",
   "description": "",
   "keywords": [],
@@ -28,9 +28,9 @@
     "eject": "react-scripts eject"
   },
   "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "Eduardo López Calvo",
+    "email": "edu.1990@hotmail.com",
+    "url": "https://github.com/edusio"
   },
-  "license": ""
+  "license": "Eduardo López"
 }

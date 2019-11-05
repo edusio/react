@@ -26,16 +26,17 @@ class BrewerieItem extends Component {
    }
 
     render() {
-        const {id, city, country, name, phone} = this.props;
+        const {id, city, country, name, phone, state} = this.props;
         return (
             <div>
                 <div id= {id} className="container col-12" onClick={(ev) => this.retrieveBrewerie(ev,id)}>
                     <div class="container-item col-6 col-md-6">
-                        <p>{name}</p>
-                        <p>{phone}</p>
+                        <p><span className="font-weight-bold">Name: </span>{name}</p>
+                        <p><span className="font-weight-bold">Phone: </span>{phone}</p>
                     </div>
                     <div className="container-item col-6 col-md-6">
-                        {city} ({country})
+                        <p><span className="font-weight-bold">City (country): </span>{city} ({country})</p>
+                        <p><span className="font-weight-bold">State : </span>{state}</p>
                     </div>
                     
                     
