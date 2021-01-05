@@ -10,7 +10,7 @@
   "github": "",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "connect": "^3.7.0",
     "prop-types": "^15.6.0",
